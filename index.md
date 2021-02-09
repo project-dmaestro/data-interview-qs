@@ -70,7 +70,7 @@ Here is the solution that I worked on.
 - 05 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Length of largest contiguous array
 - 08 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Judging smiles
 
-<hr style="border: 3px outset #595955;>
+<hr>
 
 <p align = "left">
   <a href = "https://www.linkedin.com/in/fwijaya/" target = "_blank"> <img src = "images/linkedin-logo.png" width = "25" height = "25"> </a>
