@@ -15,7 +15,7 @@ Here is the solution that I worked on.
 - 21 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating student attendance using SQL
 - 23 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; U.S. state population statistics
 - 26 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Student intelligence
-- <a href = "posted-challenges/2021/2020/october/28/index.md"> 28 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Loan default prediction (cleaning the data and intro EDA) </a>
+- <a href = "posted-challenges/2020/october/28/index.md"> 28 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Loan default prediction (cleaning the data and intro EDA) </a>
 - 30 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Termination survey data
 
 <h4> November </h4>
