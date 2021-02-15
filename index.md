@@ -15,7 +15,7 @@ Here is the solution that I worked on.
 - 21 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating student attendance using SQL
 - 23 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; U.S. state population statistics
 - 26 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Student intelligence
-- <a href = "2020-10-28.md" target = "_blank"> 28 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Loan default prediction (cleaning the data and intro EDA) </a>
+- [28 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Loan default prediction (cleaning the data and intro EDA)](./2020-10-28.html)
 - 30 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Termination survey data
 
 <h4> November </h4>
