@@ -1,7 +1,7 @@
 # Loan default prediction (cleaning the data and intro EDA)
 
-[solution in R](solutionR.md)
-[solution in Python](solutionPython.md)
+[solution in R](solution-r.md)
+[solution in Python](solution-python.md)
 
 The following [dataset](https://drive.google.com/drive/u/1/folders/165cvqQC_fgUg1njfjSSY64Wu-P54wfna) contains information on loans. Can you do the following to prepare the dataset for analysis?
 
