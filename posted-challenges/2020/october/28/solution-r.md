@@ -14,12 +14,12 @@ suppressPackageStartupMessages(library(tidyverse))
 
 ```r
 dataset <- read.csv("trunc_loan_data.csv",
-                    colClasses= c("desc"="character"))
+                    colClasses= c("desc" = "character"))
 ```
 
 **Next, create a `loan_status_type` column by categorizing `loan_status` into "Closed" or "Current".** The `loan_status_type` has six statuses which are **Fully Paid**, **Current**, [**Charged Off**](https://en.wikipedia.org/wiki/Charge-off), **Late (16 - 30 days)**, **Late (31 - 120 days)**, **In Grace Period** and [**Default**](https://www.investopedia.com/terms/d/default2.asp). In this case, **Fully Paid** is categorized as **Closed** while others are considered **Current**. By combining functionalities of `mutate()` and `if_else()`, the newly created `loan_status_type_` will be the last column added into the `dataset` variable.
 
-```r
+```R
 dataset <- dataset %>% mutate(
   loan_status_type = if_else(loan_status == "Fully Paid",
                              "Closed",
