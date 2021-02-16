@@ -1,4 +1,4 @@
-<p align = "justify">The following <a href = "https://drive.google.com/drive/u/1/folders/165cvqQC_fgUg1njfjSSY64Wu-P54wfna" target = "_blank"> dataset </a> contains information on loans. Can you do the following to prepare the dataset for analysis?
+The following [dataset] (https://drive.google.com/drive/u/1/folders/165cvqQC_fgUg1njfjSSY64Wu-P54wfna) contains information on loans. Can you do the following to prepare the dataset for analysis?
 
 1. Create a new column called "loan_status_type" which will categorize "loan_status" into the following:
     1. Current - loans currently outstanding
@@ -7,10 +7,10 @@
     1. Good - customers who have (so far) successfully met the condition of their loan (e.g. no missed payments, no late fees accumulated)
     1. Bad - customers who have missed payments / defaulted
     
-With these 2 new columns, <b>can you plot the month and year the loan was issued and the sum of the loan amounts by loan_status_type and loan_status_contract?</b> </p>
+With these 2 new columns, <b>can you plot the month and year the loan was issued and the sum of the loan amounts by loan_status_type and loan_status_contract?</b>
 
 | <b> LoanStatNew </b>        | <b> Description </b> |
-| --------------------------- | ----------- |
+| --------------------------- | -------------------- |
 | zip_code                    | The first 3 numbers of the zip code provided by the borrower in the loan application. |
 | addr_state                  | The state provided by the borrower in the loan application. |
 | annual_inc                  | The annual income provided by the borrower during registration.|
