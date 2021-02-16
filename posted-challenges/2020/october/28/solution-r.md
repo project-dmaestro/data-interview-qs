@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Solution in R
 
 **First, import the required libraries.** I'll be using `tidyverse` as the basic package and I'll add more packages along the way as needed. I choose to suppress the [diagnostic messages](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/message), hence the `suppressPackageStartupMessages()`. Loading the library without the suppression, `library(tidyverse)`, like so works as well.
@@ -24,4 +28,7 @@ dataset <- dataset %>% mutate(
 
 *Next, create a 
 
+```r
+for in if mutate_if
+```
 [back](challenge.md)
