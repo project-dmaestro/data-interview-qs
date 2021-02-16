@@ -1,3 +1,8 @@
+# Loan default prediction (cleaning the data and intro EDA)
+
+[solution in R](solutionR.md)
+[solution in Python](solutionPython.md)
+
 The following [dataset](https://drive.google.com/drive/u/1/folders/165cvqQC_fgUg1njfjSSY64Wu-P54wfna) contains information on loans. Can you do the following to prepare the dataset for analysis?
 
 1. Create a new column called "loan_status_type" which will categorize "loan_status" into the following:
@@ -61,5 +66,3 @@ With these 2 new columns, <b>can you plot the month and year the loan was issued
 | total_rec_late_fee          | Late fees received to date. |
 | total_rec_prncp             | Principal received to date. |
 | url                         | URL for the LC page with listing data. |
-
-
