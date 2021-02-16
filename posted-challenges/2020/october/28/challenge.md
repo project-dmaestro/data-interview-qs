@@ -1,4 +1,4 @@
-<p align = "justify">The following (dataset)[https://drive.google.com/drive/u/1/folders/165cvqQC_fgUg1njfjSSY64Wu-P54wfna] contains information on loans. Can you do the following to prepare the dataset for analysis?
+<p align = "justify">The following <a href = "https://drive.google.com/drive/u/1/folders/165cvqQC_fgUg1njfjSSY64Wu-P54wfna" target = "_blank"> dataset </a> contains information on loans. Can you do the following to prepare the dataset for analysis?
 
 1. Create a new column called "loan_status_type" which will categorize "loan_status" into the following:
     1. Current - loans currently outstanding
