@@ -59,7 +59,7 @@ Now that the data has been processed, I can start playing with the data.
 
 ### Data Manipulation
 
-**First, create a `loan_status_type` column by categorizing `loan_status` into "Closed" or "Current".** The `loan_status_type` has six statuses which are **Fully Paid**, **Current**, [**Charged Off**](https://en.wikipedia.org/wiki/Charge-off), **Late (16 - 30 days)**, **Late (31 - 120 days)**, **In Grace Period** and [**Default**](https://www.investopedia.com/terms/d/default2.asp). In this case, **Fully Paid** is categorized as **Closed** while other categories are considered **Current**. By combining functionalities of `mutate()` and `if_else()`, the newly created `loan_status_type_` will be the last column added into the `dataset` variable.
+First, create a `loan_status_type` column by categorizing `loan_status` into "Closed" or "Current". The `loan_status_type` has six statuses which are **Fully Paid**, **Current**, [**Charged Off**](https://en.wikipedia.org/wiki/Charge-off), **Late (16 - 30 days)**, **Late (31 - 120 days)**, **In Grace Period** and [**Default**](https://www.investopedia.com/terms/d/default2.asp). In this case, **Fully Paid** is categorized as **Closed** while other categories are considered **Current**. By combining functionalities of `mutate()` and `if_else()`, the newly created `loan_status_type_` will be the last column added into the `dataset` variable.
 
 ```r
 dataset <- dataset %>% mutate(
@@ -68,7 +68,7 @@ dataset <- dataset %>% mutate(
                              "Current"))
 ```
 
-**Next, create a `loan_status_standing` column by categorizing `loan_status` into "Good" or "Bad" customers.** In this case, **Fully Paid** is categoized as **Good** while other categories are considered **Bad**. Create `loan_status_standing` using the same method in the previous code chuck.
+Next, create a `loan_status_standing` column by categorizing `loan_status` into "Good" or "Bad" customers. In this case, **Fully Paid** is categoized as **Good** while other categories are considered **Bad**. Create `loan_status_standing` using the same method in the previous code chuck.
 
 ```r
 dataset <- dataset %>% mutate(
@@ -76,12 +76,19 @@ dataset <- dataset %>% mutate(
                              "Good",
                              "Bad"))
 ```
-**Finally, plotting month and year the loan was issued and the sum of the loan amounts by loan_status_type**. The challenge seems to have entered incorrect information as the dataset doesn't have `loan_status_contract` nor is there any description of what the column is, should I create one. The column `issue_d` shows when the loan was funded and the 
-column `loan_amnt` shows the amount of the loan applied for by the borrower and any deduction made by the credit department.
 
+Finally, plotting month and year the loan was issued and the sum of the loan amounts by loan_status_type. The challenge seems to have entered incorrect information as the dataset doesn't have `loan_status_contract` nor is there any description of what the column is, should I create one. The column `issue_d` shows when the loan was funded and the 
+column `loan_amnt` shows the amount of the loan applied for by the borrower and any deduction made by the credit department. I need to do some data aggregation to calculate the sum of loan, and save the result into a dataframe which will be used for plotting.
+
+```r
+sum_loan_amnts <- dataset %>%
+  group_by(issue_d, loan_status_type) %>%
+  summarize(sum = sum(loan_amnt))
+```
+In this challenge, the appropriate plot to show the sum of loan every month between 2015 and 2017 is 
 #### References
 
-[`sub()`](https://stackoverflow.com/questions/41622326/remove-all-characters-after-the-3rd-occurrence-of-in-each-element-of-a-vecto)
+[`sub()`](https://stackoverflow.com/questions/41622326/remove-all-characters-after-the-3rd-occurrence-of-in-each-element-of-a-vecto) <br>
 [`parse_date_time()`](https://lubridate.tidyverse.org/reference/parse_date_time.html)
 
 [back](challenge.md)
