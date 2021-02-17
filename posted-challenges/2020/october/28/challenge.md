@@ -26,8 +26,9 @@ With these 2 new columns, <b>can you plot the month and year the loan was issued
 | dti                         | A ratio calculated using the borrower’s total monthly debt payments on the total debt obligations, excluding mortgage and the requested LC loan, divided by the borrower’s self-reported monthly income.|
 | earliest_cr_line            | The month the borrower’s earliest reported credit line was opened. |
 | emp_length                  | Employment length in years. Possible values are between 0 and 10 where 0 means less than one year and 10 means ten or more years.|
-| funded_amnt                 | The job title supplied by the Borrower when applying for the loan. |
-| funded_amnt_inv             | The total amount committed to that loan at that point in time. |
+| emp_title                   | The job title supplied by the Borrower when applying for the loan. |
+| funded_amnt                 | The total amount committed to that loan at that point in time. |
+| funded_amnt_inv             | The total amount committed by investors for that loan at that point in time. |
 | grade                       | LC assigned loan grade. |
 | home_ownership              | The home ownership status provided by the borrower during registration. Our values are: RENT, OWN, MORTGAGE, OTHER. |
 | id                          | A unique LC assigned ID for the loan listing. |
