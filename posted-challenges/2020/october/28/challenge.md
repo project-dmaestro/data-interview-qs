@@ -67,3 +67,5 @@ With these 2 new columns, <b>can you plot the month and year the loan was issued
 | total_rec_late_fee          | Late fees received to date. |
 | total_rec_prncp             | Principal received to date. |
 | url                         | URL for the LC page with listing data. |
+
+[back](../october/2020/posted-challenges/index.md)
