@@ -19,7 +19,7 @@ With these 2 new columns, <b>can you plot the month and year the loan was issued
 | zip_code                    | The first 3 numbers of the zip code provided by the borrower in the loan application. |
 | addr_state                  | The state provided by the borrower in the loan application. |
 | annual_inc                  | The annual income provided by the borrower during registration.|
-| collection_recovery_fee     | post charge off collection fee. |
+| collection_recovery_fee     | Post charge off collection fee. |
 | collections_12_mths_ex_med  | Number of collections in 12 months excluding medical collections. |
 | delinq+2yrs                 | The number of 30+ days past-due incidences of delinquency in the borrower’s credit file for the past 2 years. |
 | desc                        | Loan description provided by the borrower. |
@@ -35,7 +35,7 @@ With these 2 new columns, <b>can you plot the month and year the loan was issued
 | initial_list_status         | The initial listing status of the loan. Possible values are – W, F. |
 | inq_last_6mths              | The number of inquiries by creditors during the past 6 months. |
 | installment                 | The monthly payment owed by the borrower if the loan originates. |
-| int_rate                    | Interest Rate on the loan. |
+| int_rate                    | Interest rate on the loan. |
 | issue_d                     | The month which the loan was funded. |
 | last_credit_pull_d          | The most recent month LC pulled credit for this loan. |
 | last_pymnt_amnt             | Last total payment amount received. |
