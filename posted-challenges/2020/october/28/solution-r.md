@@ -6,15 +6,15 @@ layout: default
 
 ### Pre-processing Data
 
-**First, import the required libraries.** I'll be using `tidyverse` as the basic package and I'll add more packages along the way as needed. I choose to suppress the [diagnostic messages](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/message), hence the `suppressPackageStartupMessages()`. Loading the library without the suppression, `library(tidyverse)`, like so works as well.
+First, import the required libraries. I'll be using `tidyverse` as the core package and I'll add more packages along the way as needed, but it's very unlikely for daily data analyses. I choose to suppress the [diagnostic messages](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/message), hence the `suppressPackageStartupMessages()`. Loading the library without the suppression, `library(tidyverse)`, like so works as well.
 
 ```r
 suppressPackageStartupMessages(library(tidyverse))
 ```
 
-**Next, import the CSV file using `read.csv()`.** After every import, **always** check if the file is imported correctly (i.e. no parsing error, correct column names, correct data type, each variable has its own column, each observation has its own cell).
+Next, import the CSV file using `read.csv()`. After every import, **always** check if the file is imported correctly (i.e. no parsing error, correct column name(s), correct data type(s), each variable has its own column, each observation has its own cell).
 
-When importing the file into the `dataset` variable, there's a parsing error in the `desc` variable; 40 rows have characters in them though `desc` is specified as _numeric_. Further description to an error while reading a file can be checked using `problems()`. To fix the error, I utilize the `colClasses()` parameter by defining `desc` column as _character_. It won't have any significant effect to how I'd process the data seeing that the _numeric_ values were only zeroes. It'd also be logical to change the column's data type since "desc" is short for "description". `read_csv()` doesn't have `colClasses()` parameter though I'd imagine it'd load this large dataset faster.
+When importing and saving the file into the `dataset` variable, there's a parsing error in the `desc` variable; 40 rows have characters in them though `desc` is specified as _numeric_. Further description to an error while reading a file can be checked using `problems()`. To fix the error, I utilize the `colClasses()` parameter by defining `desc` column as _character_. It won't have any significant effect to how I'd process the data seeing that the _numeric_ values were only zeroes. It'd also be logical to change the column's data type since "desc" is short for "description". `read_csv()` doesn't have `colClasses()` parameter though I'd imagine it'd load this large dataset faster.
 
 ```r
 dataset <- read.csv("trunc_loan_data.csv",
@@ -27,17 +27,37 @@ Now that the file has been read properly, let's check for more errors. The `str(
 str(dataset)
 ```
 
-The imported file is missing a column name. The first column is supposed to be `zip_code` but it doesn't exist in the original file. R naturally replaces the missing column name with `X` or `X1`, with the number signifiying the n-th missing column name. That needs to be taken care of before moving forward.
+The imported file is missing a column name. The first column is supposed to be `zip_code` but it doesn't exist in the original file. R naturally replaces the missing column name with `X` or `X1`, with the number signifiying the n-th missing column name. To rename a column name, or multiple column names, use `colnames()`. Since I have a _specific_ column that _I know the location of_ in the dataset, I can specify its location  using `[]` so that the name change will be applied _directly to that column only_. If I had typed `colnames(dataset)` which doesn't specify the column I wanted, then `colnames()` requires the remaining column names after `zip_code`.
 
 ```r
 colnames(dataset)[1] <- c("zip_code")
 ```
 
-Notice that some columns don't have its correct data type, particularly columns that are supposed to be _Date_ objects such as: `earliest_cr_line`, `issued_d`, `last_credit_pull_d`, `last_pymnt_d` and `next_pymnt_d`.
+Notice that some columns don't have its correct data type, particularly columns that are supposed to be _Date_ objects such as: `earliest_cr_line`, `issued_d`, `last_credit_pull_d`, `last_pymnt_d` and `next_pymnt_d`. I'll use `parse_time_date()` as opposed to `as.Date()` ~~because I coulnd't get the function working on my laptop~~ to type cast these columns from _character_ to _Date_.
 
-### Data Manipulation
+```r
+dataset$earliest_cr_line <- parse_date_time(dataset$earliest_cr_line, orders = c("my", "ym"))
+dataset$issue_d <- parse_date_time(dataset$issue_d, orders = c("my", "ym"))
+dataset$last_credit_pull_d <- parse_date_time(dataset$last_credit_pull_d, orders = c("my", "ym"))
+dataset$last_pymnt_d <- parse_date_time(dataset$last_pymnt_d, orders = c("my", "ym"))
+dataset$next_pymnt_d <- parse_date_time(dataset$next_pymnt_d, orders = c("my", "ym"))
+```
+
+Notice that there'll be parsing errors caused by singular zeroes which `parse_date_time()` doesn't recognize as date format. Those were cases which a loan hadn't been issued for reasons unknown, no payment had been made, or no credit had been pulled. The parsing error will cause `NA` to exist in the dataset but that's okay.
+
+Now, the format of those Date columns is `yyyy-mm-dd UTC` which is _slightly_ incorrect. Technically, there's no day specified in the original file, only abbreviated month and year without century. There's also the "UTC" set by `parse_date_time()` automatically seeing that I don't specify which timezone those dates are in. Thus, string manipulation is needed to extract only the year and month. In this case, I'm using `sub()` to get rid of anything after the second hypen.
+
+```r
+dataset$earliest_cr_line <- sub("^([^-]*-[^-]*).*", "\\1", dataset$earliest_cr_line)
+dataset$issue_d <- sub("^([^-]*-[^-]*).*", "\\1", dataset$issue_d)
+dataset$last_credit_pull_d <- sub("^([^-]*-[^-]*).*", "\\1", dataset$last_credit_pull_d)
+dataset$last_pymnt_d <- sub("^([^-]*-[^-]*).*", "\\1", dataset$last_pymnt_d)
+dataset$next_pymnt_d <- sub("^([^-]*-[^-]*).*", "\\1", dataset$next_pymnt_d)
+```
 
 Now that the data has been processed, I can start playing with the data.
+
+### Data Manipulation
 
 **First, create a `loan_status_type` column by categorizing `loan_status` into "Closed" or "Current".** The `loan_status_type` has six statuses which are **Fully Paid**, **Current**, [**Charged Off**](https://en.wikipedia.org/wiki/Charge-off), **Late (16 - 30 days)**, **Late (31 - 120 days)**, **In Grace Period** and [**Default**](https://www.investopedia.com/terms/d/default2.asp). In this case, **Fully Paid** is categorized as **Closed** while other categories are considered **Current**. By combining functionalities of `mutate()` and `if_else()`, the newly created `loan_status_type_` will be the last column added into the `dataset` variable.
 
@@ -58,5 +78,10 @@ dataset <- dataset %>% mutate(
 ```
 **Finally, plotting month and year the loan was issued and the sum of the loan amounts by loan_status_type**. The challenge seems to have entered incorrect information as the dataset doesn't have `loan_status_contract` nor is there any description of what the column is, should I create one. The column `issue_d` shows when the loan was funded and the 
 column `loan_amnt` shows the amount of the loan applied for by the borrower and any deduction made by the credit department.
+
+#### References
+
+[`sub()`](https://stackoverflow.com/questions/41622326/remove-all-characters-after-the-3rd-occurrence-of-in-each-element-of-a-vecto)
+[`parse_date_time()`](https://lubridate.tidyverse.org/reference/parse_date_time.html)
 
 [back](challenge.md)
