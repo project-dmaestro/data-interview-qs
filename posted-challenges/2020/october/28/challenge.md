@@ -68,4 +68,4 @@ With these 2 new columns, <b>can you plot the month and year the loan was issued
 | total_rec_prncp             | Principal received to date. |
 | url                         | URL for the LC page with listing data. |
 
-[back](./october/2020/posted-challenges/index.md)
+[back](./october/2020/posted-challenges/data-interview-qs/index.md)
