@@ -33,7 +33,7 @@ The imported file is missing a column name. The first column is supposed to be `
 colnames(dataset)[1] <- c("zip_code")
 ```
 
-Notice that some columns don't have its correct data type, particularly columns that are supposed to be _Date_ objects such as: `earliest_cr_line`, `issued_d`, `last_credit_pull_d`, `last_pymnt_d` and `next_pymnt_d`. I'll use `parse_time_date()` as opposed to `as.Date()` ~~because I coulnd't get the function working on my laptop~~ to type cast these columns from _character_ to _Date_.
+Notice that some columns don't have its correct data type, particularly columns that are supposed to be _Date_ objects such as: `earliest_cr_line`, `issued_d`, `last_credit_pull_d`, `last_pymnt_d` and `next_pymnt_d`. I'll use `parse_time_date()` as opposed to `as.Date()` ~~because I coulnd't get the function working properly on my laptop~~ to type cast these columns from _character_ to _Date_.
 
 ```r
 dataset$earliest_cr_line <- parse_date_time(dataset$earliest_cr_line, orders = c("my", "ym"))
