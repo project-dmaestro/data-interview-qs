@@ -85,7 +85,36 @@ sum_loan_amnts <- dataset %>%
   group_by(issue_d, loan_status_type) %>%
   summarize(sum = sum(loan_amnt))
 ```
-In this challenge, the appropriate plot to show the sum of loan every month between 2015 and 2017 is 
+
+In this challenge, the appropriate plot to show the sum of loan every month between 2015 and 2016 is barplot. Because the sum is too large in number to be displayed properly, I'll be using `plotly` package to make the barplot interactable so the monthly sum will pop once the mouse hovers over the bar. Thus, I need to add another package into the script.
+
+```r
+suppressPackageStartupMessages(library(plotly))
+```
+
+The barplot is designed to be vertical because it has ordinal variable involved which is `issue_d`. The viewer will read the plot from left to right in chronological order from January 2015 to December 2016. The **sum** variable's values are scaled down by 10<sup>^6</sup> to ease reading; the detailed values can be viewed when the mouse hovers each bar using `ggplotly()`. The bars have been colored based on loan status, **Current** or **Closed**, because it's an important feature in this dataset. The bar of each loan status type is positioned side-to-side to show comparison in sum of loan in a month quickly. The purpose of minimalizing the display is to give general information _in a glance_. Addiding meaningful plot title, x-axis label and y-axis label helps too.
+
+```r
+p <- ggplot(data = sum_loan_amnts) +
+  geom_col(mapping = aes(x = issue_d,
+                         y = sum/10^6,
+                         fill = loan_status_type),
+           position = "dodge",
+           alpha = 0.5) +
+  labs(title = "Sum of Loan Monthly from 2015 - 2016 Based on Loan Status",
+       x = "Date Issued",
+       y = "Amount of Loan (in millions)",
+       fill = "Loan Status") +
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggplotly(p)
+```
+
+This is what the static plot looks like. The interactable plot works only in browser or programming IDE.
+
+[]()
+
 #### References
 
 [`sub()`](https://stackoverflow.com/questions/41622326/remove-all-characters-after-the-3rd-occurrence-of-in-each-element-of-a-vecto) <br>
