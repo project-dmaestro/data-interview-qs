@@ -115,6 +115,8 @@ This is what the static plot looks like. The interactable plot works only in bro
 
 ![plot1](images/plot1.png)
 
+The plot describes the sum of loan based on date issued and loan status type from January 2015 to December 2016.
+
 #### References
 
 [`sub()`](https://stackoverflow.com/questions/41622326/remove-all-characters-after-the-3rd-occurrence-of-in-each-element-of-a-vecto) <br>
