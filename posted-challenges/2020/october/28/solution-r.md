@@ -113,7 +113,7 @@ ggplotly(p)
 
 This is what the static plot looks like. The interactable plot works only in browser or programming IDE.
 
-[]()
+[](images/plot1.png)
 
 #### References
 
