@@ -1,6 +1,6 @@
 <h1> selamat datang </h1>
 
-Here is the list of challenges that I've received so far which will be updated as soon as I came up with a solution for it. I won't only code the solutions in R and Python, but also in SQL if applicable. There're explanations to my thinking process to come up with the solution. If you have any feedback on my code, don't hesitate to send me an email through a link in my main web page.
+Here is the list of challenges that I've received so far which will be updated as soon as I came up with a solution for it. I'll code the solutions in R, Python, SQL and/or NetLogo depending on my understanding and package/library availability. There's explanation to my thinking process to understand how I analyze the problem and reach to conclusion. If you have any feedback on my code, don't hesitate to send me an <a href = "mailto:project-dmaestro@gmail.com?subject=hello%20from%20exhibition-dmaestro"> email </a>.
 
 <h2> Posted Challenges </h2>
 
