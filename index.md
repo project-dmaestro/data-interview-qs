@@ -8,68 +8,73 @@ Here is the list of challenges that I've received so far which will be updated a
 
 <h3> 2020 </h3>
 <h4> October </h4>
-- 09 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Simulate population wealth over time
-- 12 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Best selling products
-- 14 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating earnings with Python
-- 16 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Auto insurance customers
-- 19 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Retention Analysis
-- 21 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating student attendance using SQL
-- 23 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; U.S. state population statistics
-- 26 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Student intelligence
+- [09 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Simulate population wealth over time](./posted-challenges/2020/october/09/challenge.md)
+- [12 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Best selling products](./posted-challenges/2020/october/12/challenge.md)
+- [14 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating earnings with Python](./posted-challenges/2020/october/14/challenge.md)
+- [16 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Auto insurance customers](./posted-challenges/2020/october/16/challenge.md)
+- [19 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Retention Analysis](./posted-challenges/2020/october/19/challenge.md)
+- [21 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating student attendance using SQL](./posted-challenges/2020/october/21/challenge.md)
+- [23 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; U.S. state population statistics](./posted-challenges/2020/october/23/challenge.md)
+- [26 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Student intelligence](./posted-challenges/2020/october/26/challenge.md)
 - [28 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Loan default prediction (cleaning the data and intro EDA)](./posted-challenges/2020/october/28/challenge.md)
-- 30 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Termination survey data
+- [30 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Termination survey data](./posted-challenges/2020/october/30/challenge.md)
 
 <h4> November </h4>
-- 02 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Wine Quality Prediction - Random Forest with Grid Search CV
-- 06 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; World Leader Exits
-- 09 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Beverage sales
-- 11 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Births by state
-- 13 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Defective gaskets
-- 16 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Baby names
-- 18 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Planning for a new office, using SQL
-- 20 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Largest elemets in an array
-- 23 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Second price (Vickrey) auction
-- 25 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Time for response on a messaging application
-- 27 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; SQL patterns
-- 30 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Check whether two arrays are equal
+- [02 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Wine Quality Prediction - Random Forest with Grid Search CV](./posted-challenges/2020/november/02/challenge.md)
+- [06 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; World Leader Exits](./posted-challenges/2020/november/06/challenge.md)
+- [09 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Beverage sales](./posted-challenges/2020/november/09/challenge.md)
+- [11 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Births by state](./posted-challenges/2020/november/11/challenge.md)
+- [13 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Defective gaskets](./posted-challenges/2020/november/13/challenge.md)
+- [16 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Baby names](./posted-challenges/2020/november/16/challenge.md)
+- [18 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Planning for a new office, using SQL](./posted-challenges/2020/november/18/challenge.md)
+- [20 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Largest elemets in an array](./posted-challenges/2020/november/20/challenge.md)
+- [23 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Second price (Vickrey) auction](./posted-challenges/2020/november/23/challenge.md)
+- [25 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Time for response on a messaging application](./posted-challenges/2020/november/25/challenge.md)
+- [27 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; SQL patterns](./posted-challenges/2020/november/27/challenge.md)
+- [30 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Check whether two arrays are equal](./posted-challenges/2020/november/30/challenge.md)
 
 <h4> December </h4>
-- 02 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Probability of passing through interview stages
-- 04 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Revenue trends for online vs. in store
-- 07 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Best ad group, a SQL version
-- 09 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Matrix frequencies
-- 11 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Cereal ratings: top 3 variables
-- 14 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Retail revenue trends
-- 16 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Querying San Francisco Public Worker Salary
-- 21 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Weather forecasting, a markov chain problem
-- 23 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating Value at Risk (VaR) of portofolio
-- 25 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; New companies
-- 28 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Empty slot in list of integers
-- 30 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; ROC Curve
+- [02 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Probability of passing through interview stages](./posted-challenges/2020/december/02/challenge.md)
+- [04 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Revenue trends for online vs. in store](./posted-challenges/2020/december/04/challenge.md)
+- [07 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Best ad group, a SQL version](./posted-challenges/2020/december/07/challenge.md)
+- [09 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Matrix frequencies](./posted-challenges/2020/december/09/challenge.md)
+- [11 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Cereal ratings: top 3 variables](./posted-challenges/2020/december/11/challenge.md)
+- [14 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Retail revenue trends](./posted-challenges/2020/december/14/challenge.md)
+- [16 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Querying San Francisco Public Worker Salary](./posted-challenges/2020/december/16/challenge.md)
+- [21 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Weather forecasting, a markov chain problem](./posted-challenges/2020/december/21/challenge.md)
+- [23 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating Value at Risk (VaR) of portofolio](./posted-challenges/2020/december/23/challenge.md)
+- [25 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; New companies](./posted-challenges/2020/december/25/challenge.md)
+- [28 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Empty slot in list of integers](./posted-challenges/2020/december/28/challenge.md)
+- [30 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; ROC Curve](./posted-challenges/2020/december/30/challenge.md)
 
 <hr>
 
 <h3> 2021 </h3>
 <h4> January </h4>
-- 01 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Top spending users
-- 04 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Top spending users
-- 06 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Music streaming behavior
-- 08 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Pythagorean Triplet
-- 11 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Rental car locations
-- 13 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Normalizing student grades with Pandas
-- 15 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Loyal customers
-- 18 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Telephone digits to letters
-- 20 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Car battery - Exponential distribution question
-- 22 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; NYC Complaints
-- 25 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Reddit comment activity
-- 27 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Points within an interval
-- 29 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Rolling 9s for $50
+- [01 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Top spending users](./posted-challenges/2021/january/01/challenge.md)
+- [04 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Top spending users](./posted-challenges/2021/january/04/challenge.md)
+- [06 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Music streaming behavior](./posted-challenges/2021/january/06/challenge.md)
+- [08 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Pythagorean Triplet](./posted-challenges/2021/january/08/challenge.md)
+- [11 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Rental car locations](./posted-challenges/2021/january/11/challenge.md)
+- [13 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Normalizing student grades with Pandas](./posted-challenges/2021/january/13/challenge.md)
+- [15 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Loyal customers](./posted-challenges/2021/january/15/challenge.md)
+- [18 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Telephone digits to letters](./posted-challenges/2021/january/18/challenge.md)
+- [20 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Car battery - Exponential distribution question](./posted-challenges/2021/january/20/challenge.md)
+- [22 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; NYC Complaints](./posted-challenges/2021/january/22/challenge.md)
+- [25 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Reddit comment activity](./posted-challenges/2021/january/25/challenge.md)
+- [27 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Points within an interval](./posted-challenges/2021/january/27/challenge.md)
+- [29 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Rolling 9s for $50](./posted-challenges/2021/january/29/challenge.md)
 
 <h4> February </h4>
-- 01 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Cereal ratings
-- 03 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Student GPA
-- 05 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Length of largest contiguous array
-- 08 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Judging smiles
+- [01 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Cereal ratings](./posted-challenges/2021/february/01/challenge.md)
+- [03 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Student GPA](./posted-challenges/2021/february/03/challenge.md)
+- [05 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Length of largest contiguous array](./posted-challenges/2021/february/05/challenge.md)
+- [08 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Judging smiles](./posted-challenges/2021/february/08/challenge.md)
+- [10 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Most common part of speech using NLTK](./posted-challenges/2021/february/10/challenge.md)
+- [12 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Twitch content creators](./posted-challenges/2021/february/12/challenge.md)
+- [15 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; American Football Scoring](./posted-challenges/2021/february/15/challenge.md)
+- [17 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Chi square testing candy distribution](./posted-challenges/2021/february/17/challenge.md)
+- [19 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Application feedback](./posted-challenges/2021/february/19/challenge.md)
 
 <hr>
 
