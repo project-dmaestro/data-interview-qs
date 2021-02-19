@@ -1,5 +1,6 @@
 <h1> selamat datang </h1>
-Here is the solution that I worked on.
+
+Here is the list of challenges that I've received so far which will be updated as soon as I came up with a solution for it. I won't only code the solutions in R and Python, but also in SQL if applicable. There're explanations to my thinking process to come up with the solution. If you have any feedback on my code, don't hesitate to send me an email through a link in my main web page.
 
 <h2> Posted Challenges </h2>
 
@@ -79,3 +80,5 @@ Here is the solution that I worked on.
     <img src = "images/gmail-logo.png" width = "25" height = "25">
   </a>
 </p>
+
+This work is licensed under [Creative Commons Legal Code CC0 1.0 Universal](LICENSE.md).
