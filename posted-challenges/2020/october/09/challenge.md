@@ -8,7 +8,7 @@ Suppose you're given the following information about a population and its wealth
 - Population size: 2500
 - Mean income (in USD, thousands): 50
 - Standard deviation of income (in USD, thousands): 12.5
-- The population wealth is initially normally distributed
+- The population wealth is initially normally distributed.
 
 Additionally, you're told that economic transactions occur randomly between two individuals in the population. In a transaction, two parties come together and there is an exchange of wealth. For the purposes of this question, the transactions can be modeled in the following way:
 
