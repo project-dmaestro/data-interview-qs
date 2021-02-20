@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Solution in R
+# solution in R
 
-### Pre-processing Data
+### pre-processing data
 
 First, import the required libraries. Use `tidyverse` as the core package and add more packages along the way as needed, but it's very unlikely for daily data analyses. I chose to suppress the [diagnostic messages](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/message), hence the `suppressPackageStartupMessages()`. Loading the library without the suppression, `library(tidyverse)`, works as well.
 
@@ -57,7 +57,7 @@ dataset$next_pymnt_d <- sub("^([^-]*-[^-]*).*", "\\1", dataset$next_pymnt_d)
 
 Now that the data has been processed, I can start playing with the data.
 
-### Data Manipulation
+### data manipulation
 
 First, create a `loan_status_type` column by categorizing `loan_status` into "Closed" or "Current". The `loan_status_type` has six statuses which are **Fully Paid**, **Current**, [**Charged Off**](https://en.wikipedia.org/wiki/Charge-off), **Late (16 - 30 days)**, **Late (31 - 120 days)**, **In Grace Period** and [**Default**](https://www.investopedia.com/terms/d/default2.asp). In this case, **Fully Paid** is categorized as **Closed** while other categories are considered **Current**. By combining functionalities of `mutate()` and `if_else()`, the newly created `loan_status_type_` will be the last column added into the `dataset` variable.
 
@@ -76,6 +76,8 @@ dataset <- dataset %>% mutate(
                              "Good",
                              "Bad"))
 ```
+
+### plotting
 
 Finally, plotting month and year the loan was issued and the sum of the loan amounts by loan_status_type. The challenge seems to have entered incorrect information as the dataset doesn't have `loan_status_contract` nor is there any description of what the column is, should I create one. The column `issue_d` shows when the loan was funded and the 
 column `loan_amnt` shows the amount of the loan applied for by the borrower and any deduction made by the credit department. I need to do some data aggregation to calculate the sum of loan, and save the result into a dataframe which will be used for plotting.
@@ -117,7 +119,7 @@ This is what the static plot looks like. The interactable plot works only in bro
 
 The plot describes the sum of loan based on date issued and loan status type from January 2015 to December 2016.
 
-#### References
+#### references
 
 [`sub()`](https://stackoverflow.com/questions/41622326/remove-all-characters-after-the-3rd-occurrence-of-in-each-element-of-a-vecto) <br>
 [`parse_date_time()`](https://lubridate.tidyverse.org/reference/parse_date_time.html)
