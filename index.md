@@ -76,6 +76,8 @@ Here is the list of challenges that I've received so far which will be updated a
 - [17 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Chi square testing candy distribution](./posted-challenges/2021/february/17/challenge.md)
 - [19 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Application feedback](./posted-challenges/2021/february/19/challenge.md)
 
+[back](https://project-dmaestro.github.io/exhibition-dmaestro/)
+
 <hr>
 
 <p align = "left">
@@ -86,4 +88,4 @@ Here is the list of challenges that I've received so far which will be updated a
   </a>
 </p>
 
-This work is licensed under [Creative Commons Legal Code CC0 1.0 Universal](LICENSE.md).
+#### This work is licensed under [Creative Commons Legal Code CC0 1.0 Universal](LICENSE.md).
