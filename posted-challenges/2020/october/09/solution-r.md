@@ -152,7 +152,7 @@ shinyUI(fluidPage(
 
 The static plot looked like this.
 
-![](images/plot1.PNG)
+![](images/plot1.PNG =250x250)
 
 #### references
 
