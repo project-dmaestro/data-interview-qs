@@ -27,12 +27,13 @@ pop <- pop %>% mutate(
   income = rnorm(2500, 50000, 12500))
 ```
 
-When glancing at the `pop` dataset, notice that `gender` and `enthicity` column had been coded in numerics based on the [`randomNames` documentation's specification](https://cran.r-project.org/web/packages/randomNames/randomNames.pdf). For the purpose of later visualization, the numerics needed to be decoded into categorical variables as follows:
+When viewing `pop` dataset, notice that `gender` and `enthicity` column had been coded in numerics based on the [`randomNames` documentation's specification](https://cran.r-project.org/web/packages/randomNames/randomNames.pdf). For the purpose of later visualization, the numerics needed to be decoded into categorical variables as follows:
 
 -`gender`
   - **0** = **Male**
   - **1** = **Female**
--`ethnicity`
+ 
+ -`ethnicity`
   - **1** = **American Indian or Native Alaskan**
   - **2** = **Asian or Pacific Islander**
   - **3** = **Black (not Hispanic)**
@@ -40,8 +41,120 @@ When glancing at the `pop` dataset, notice that `gender` and `enthicity` column 
   - **5** = **Black (not Hispanic)**
   - **6** = **Middle-Eastern, Arabic**
 
+The `factor()` can bind those numerics into its corresponding factor.
+
+```r
+pop$gender <- factor(pop$gender,
+                     levels = c(0,1),
+                     labels = c("Male", "Female"))
+
+pop$ethnicity <- factor(pop$ethnicity,
+                        levels = c(1:6),
+                        labels = c("American Indian or Native Alaskan",
+                                   "Asian or Pacific Islander",
+                                   "Black (not Hispanic)",
+                                   "Hispanic",
+                                   "White (not Hispanic)",
+                                   "Middle-Eastern or Arabic"))
+```
+
+The data had been fully processed.
+
+### simulation
+
+I hadn't known any package that's used specifically for simulation of wealth distribution so I decided to design one. I tried to make the decision making as random as possible. For the purpose of data visualization, I had initialized `hist` which was historical dataframe to record changes in income that happened during simulation. I also labeled each step of simulation under the variable `cycle`.
+
+```r
+hist <- pop %>% mutate(
+  cycle = 0 # initialize original population
+)
+
+for (i in 1:50){ # simulating 50 transactions
+  
+  # pairing up random people to perform transaction
+  pairs = sample(1:1250, 1) # pick one number to represent number of pairs of people
+  a = sample(1:2500, pairs, replace = FALSE) # pick the first halves of the pair from pool of 2500 people
+  b = sample(c(1:2500)[-a], pairs, replace = FALSE) # pick the second halves of the pair from the remaining people
+  
+  # calculate new income and assign the splits to pairs
+  new_income = (pop$income[a] + pop$income[b])/2 # add pairs' income and split by two
+  pop$income[a] = new_income # assign resulting income to first halves of the pair
+  pop$income[b] = new_income # assign resulting income to second halves of the pair
+  
+  pop <- pop %>% mutate(
+    cycle = i # capture population at n-th cycle
+  )
+  
+  hist <- rbind(hist, pop) # bind accumulated historical data with new one
+}
+```
+
+I exported the dataset into .csv for data visualization under tthe name `hist.csv`.
+
+### visualization
+
+To visualize the exported dataset, I used <a href = "https://docs.rstudio.com/shinyapps.io/" target = "_blank")shinyapps.io</a>.
+
+#### server
+
+```r
+# import packages
+suppressPackageStartupMessages(library(shiny))
+suppressPackageStartupMessages(library(tidyverse))
+
+# import dataset
+dataset <- read.csv("hist.csv") # the historical data that was exported
+
+shinyServer(function(input, output) {
+    output$incomePlot <- renderPlot({
+        filtered <- filter(dataset, cycle == input$selected)
+        
+        ggplot(data = filtered) +
+            geom_histogram(mapping = aes(x = income, fill = gender),
+                         alpha = 0.3, bins = input$bins) +
+            facet_wrap( ~ ethnicity)
+    })
+})
+```
+
+#### ui
+
+```r
+# import packages
+suppressPackageStartupMessages(library(shiny))
+
+shinyUI(fluidPage(
+    titlePanel("Simulate population wealth over time"),
+    
+    sidebarLayout(sidebarPanel(
+        
+        sliderInput(
+            "bins",
+            "number of bins",
+            min = 1,
+            max = 50,
+            value = 1
+        ),
+        
+        sliderInput(
+            "selected",
+            "n-th cycle:",
+            min = 0,
+            max = 50,
+            value = 0
+        )
+    ),
+    
+    
+    mainPanel(plotOutput("incomePlot")))
+))
+```
+
+The static plot looked like this.
+
+[](images/plot1.png)
 
 #### references
 
-[randomNames()](https://cran.r-project.org/web/packages/randomNames/randomNames.pdf)
+[randomNames()](https://cran.r-project.org/web/packages/randomNames/randomNames.pdf) <br>
 [value labels](https://www.statmethods.net/input/valuelabels.html)
