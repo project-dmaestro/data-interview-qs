@@ -150,9 +150,12 @@ shinyUI(fluidPage(
 ))
 ```
 
-The static plot looked like this. The interactive plot could show changes in income across six ethnicities through histograms. I noticed at the end of simulation that the average income in each etnicity is around $49000 with small variance.
+The static plot looked like this. The interactive plot could show changes in income across six ethnicities through histograms. The two sliders give users freedom to choose the number of histogram bins and show income histograms from the n-th transaction out of fifty that were simulated.
 
 <img src = "images/plot1.PNG">
+
+I noticed at the end of simulation that the average income in each etnicity is around $49000 with small variance in values.
+
 <img src = "images/plot2.PNG">
 
 #### references
