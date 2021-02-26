@@ -151,11 +151,11 @@ shinyUI(fluidPage(
 ))
 ```
 
-The static plot looked like this. The interactive histograms could show changes in income between two genders across six ethnicities. The two sliders give users freedom to choose the number of histogram bins and show income histograms from the n-th transaction out of fifty that were simulated.
+The user interface of the shinyapp looks like the picture below. The interactive histograms on the right shows distribution in income between two genders across six ethnicities. The two sliders give users freedom to choose the number of histogram bins and n-th transaction out of fifty that were simulated.
 
 <img src = "images/plot1.PNG">
 
-I noticed at the end of simulation that the average income between two genders in each etnicity is around $49,000 with small variance in values.
+I observed the resulting histograms to notice that there was a pattern in population income. At the end of simulation, the average income between two genders in each etnicity is converged to around $49,000 with small variance in values. The first significant convergence was already shown halfway through the simulation cycle.
 
 <img src = "images/plot2.PNG">
 
