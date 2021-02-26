@@ -93,7 +93,7 @@ I exported the dataset into .csv for data visualization under tthe name `hist.cs
 
 ### visualization
 
-To visualize the exported dataset, I used <a href = "https://docs.rstudio.com/shinyapps.io/" target = "_blank">shinyapps.io</a>.
+To visualize the exported dataset, I used <a href = "https://docs.rstudio.com/shinyapps.io/" target = "_blank">shinyapps.io</a>. The code is divided into two, `server` and `ui`. The `server`
 
 #### server
 
@@ -103,16 +103,17 @@ suppressPackageStartupMessages(library(shiny))
 suppressPackageStartupMessages(library(tidyverse))
 
 # import dataset
-dataset <- read.csv("hist.csv") # the historical data that was exported
+dataset <- read.csv("hist.csv")
 
 shinyServer(function(input, output) {
     output$incomePlot <- renderPlot({
-        filtered <- filter(dataset, cycle == input$selected)
+        filtered <- filter(dataset, cycle == input$selected) # filter dataset based on cycle (slider input)
         
-        ggplot(data = filtered) +
-            geom_histogram(mapping = aes(x = income, fill = gender),
-                         alpha = 0.3, bins = input$bins) +
-            facet_wrap( ~ ethnicity)
+        # build the histogram
+        ggplot(data = filtered) + # use filtered data
+            geom_histogram(mapping = aes(x = income, fill = gender), # create income histogram filled by gender
+                         alpha = 0.3, bins = input$bins) + # modify transparency and number of bins (slider input)
+            facet_wrap( ~ ethnicity) # facet the histogram based on ethnicity
     })
 })
 ```
@@ -128,7 +129,7 @@ shinyUI(fluidPage(
     
     sidebarLayout(sidebarPanel(
         
-        sliderInput(
+        sliderInput( # slider bar to control number of histogram bins
             "bins",
             "number of bins",
             min = 1,
@@ -136,7 +137,7 @@ shinyUI(fluidPage(
             value = 1
         ),
         
-        sliderInput(
+        sliderInput( # slider bar to select n-th cycle
             "selected",
             "n-th cycle:",
             min = 0,
