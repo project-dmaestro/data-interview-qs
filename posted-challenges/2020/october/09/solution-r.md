@@ -154,7 +154,7 @@ The static plot looked like this. The interactive histograms could show changes 
 
 <img src = "images/plot1.PNG">
 
-I noticed at the end of simulation that the average income between two genders in each etnicity is around $49000 with small variance in values.
+I noticed at the end of simulation that the average income between two genders in each etnicity is around $49,000 with small variance in values.
 
 <img src = "images/plot2.PNG">
 
