@@ -58,27 +58,27 @@ Next, I defined a function to sort randomly generated numbers alternately betwee
 #
 # return: print of generated values
 #         print of sorted values
-alter_sort = function(min,max,n){
-  generated = sort(sample(c(min:max),n)) # sorting generated numbers ascendingly
+alter_sort = function(min, max, n) {
+  generated = sort(sample(c(min:max), n)) # sort generated numbers ascendingly
   
   front = 1 # index counting forward
   back = length(generated) # index counting backward
   
   sorted = c() # initialize empty vector
-  while(front < back){
-    sorted = c(sorted,generated[back],generated[front]) # merge previous vector with sorted values
+  while (front < back) {
+    sorted = c(sorted, generated[back], generated[front]) # merge previous vector with sorted values
     
     # updating index value
     front = front + 1
     back = back - 1
   }
   
-  if(n%%2 != 0){
-    sorted = c(sorted,generated[back])
+  if (n %% 2 != 0) {
+    sorted = c(sorted, generated[back])
   }
   
-  cat(c("generated numbers \t: [",generated,"]\n"))
-  cat(c("sorted numbers \t\t: [",sorted,"]\n\n"))
+  cat(c("generated numbers \t: [", generated, "]\n"))
+  cat(c("sorted numbers \t\t: [", sorted, "]\n\n"))
 }
 ```
 
