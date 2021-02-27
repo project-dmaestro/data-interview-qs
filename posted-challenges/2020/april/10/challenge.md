@@ -1,6 +1,6 @@
 # Maximum of subarrays
 
-[solution in R](solution-r.md)
+[solution in R](solution-r.md) <br>
 [solution in Python](solution-python.md)
 
 Given an array and an integer A, find the maximum for each contiguous subarray of size A.
