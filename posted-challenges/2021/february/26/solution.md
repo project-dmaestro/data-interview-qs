@@ -6,3 +6,5 @@ Another concern arises when encountering an unknown category in the test dataset
 
 #### reference
 [Naive Bayes Theorem](https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/#:~:text=Naive%20Bayes%20Model-,What%20is%20Naive%20Bayes%20algorithm%3F,presence%20of%20any%20other%20feature.)
+
+[back](./challenge.md)
