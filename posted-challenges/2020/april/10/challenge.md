@@ -13,13 +13,13 @@ Output: 3 3 4 5 5 5 6
 Below is a more detailed walkthrough of what you should be trying to code, using the example above:
 
 subarray 1 = [**1**, **2**, **3**, 1, 4, 5, 2, 3, 6] <br>
-maximum of subarray 1 = 3
+maximum of subarray 1 = **3**
 
 subarray 2 = [1, **2**, **3**, **1**, 4, 5, 2, 3, 6] <br>
-maximum of subarray 2 = 3
+maximum of subarray 2 = **3**
 
 subarray 3 = [1, 2, **3**, **1**, **4**, 5, 2, 3, 6] <br>
-maximum of subarray 3 = 4
+maximum of subarray 3 = **4**
 
 Etc.
 
