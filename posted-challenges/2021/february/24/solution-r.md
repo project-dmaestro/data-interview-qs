@@ -68,15 +68,17 @@ alter_sort = function(min, max, n) {
   while (front < back) {
     sorted = c(sorted, generated[back], generated[front]) # merge previous vector with sorted values
     
-    # updating index value
+    # update index value
     front = front + 1
     back = back - 1
   }
   
+  # odd-numbered lists
   if (n %% 2 != 0) {
     sorted = c(sorted, generated[back])
   }
   
+  # output
   cat(c("generated numbers \t: [", generated, "]\n"))
   cat(c("sorted numbers \t\t: [", sorted, "]\n\n"))
 }
