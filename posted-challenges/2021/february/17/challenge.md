@@ -1,4 +1,4 @@
-# Chi square testing candy distribution
+# Chi-square testing candy distribution
 
 [solution in R](solution-r.md) <br>
 [solution in Python](solution-python.md)
