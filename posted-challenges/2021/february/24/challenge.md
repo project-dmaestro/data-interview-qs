@@ -1,4 +1,4 @@
-# Loan default prediction (cleaning the data and intro EDA)
+# Alternative array sorting
 
 [solution in R](solution-r.md) <br>
 [solution in Python](solution-python.md)
