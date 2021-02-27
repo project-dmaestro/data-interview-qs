@@ -59,7 +59,7 @@ Next, I defined a function to sort randomly generated numbers alternately betwee
 # return: print of generated values
 #         print of sorted values
 alter_sort = function(min,max,n){
-  generated = sort(sample(c(min:max),n))
+  generated = sort(sample(c(min:max),n)) # sorting generated numbers ascendingly
   
   front = 1 # index counting forward
   back = length(generated) # index counting backward
