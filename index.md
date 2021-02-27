@@ -7,6 +7,17 @@ Here is the list of challenges that I've received so far which will be updated a
 <hr>
 
 <h3> 2020 </h3>
+
+<h4> April </h4>
+- [08 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Reddit posts and comments](./posted-challenges/2020/april/08/challenge.md)
+- [10 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Maximum of subarrays](./posted-challenges/2020/april/10/challenge.md)
+
+<h4> May </h4>
+<h4> June </h4>
+<h4> July </h4>
+<h4> August </h4>
+<h4> September </h4>
+
 <h4> October </h4>
 - [09 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Simulate population wealth over time](./posted-challenges/2020/october/09/challenge.md)
 - [12 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Best selling products](./posted-challenges/2020/october/12/challenge.md)
