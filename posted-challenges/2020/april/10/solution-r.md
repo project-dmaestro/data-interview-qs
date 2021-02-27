@@ -46,3 +46,5 @@ max_of_subarray(20,53,30,6)
 And the results were:
 
 ![](images/plot1.PNG)
+
+[back](./challenge.md)
