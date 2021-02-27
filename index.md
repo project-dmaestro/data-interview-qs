@@ -75,6 +75,8 @@ Here is the list of challenges that I've received so far which will be updated a
 - [15 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; American Football Scoring](./posted-challenges/2021/february/15/challenge.md)
 - [17 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Chi square testing candy distribution](./posted-challenges/2021/february/17/challenge.md)
 - [19 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Application feedback](./posted-challenges/2021/february/19/challenge.md)
+- [24 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Alternative array sorting](./posted-challenges/2021/february/24/challenge.md)
+- [26 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Naive Bayes](./posted-challenges/2021/february/26/challenge.md)
 
 [back](https://project-dmaestro.github.io/exhibition-dmaestro/)
 
