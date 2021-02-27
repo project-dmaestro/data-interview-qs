@@ -162,6 +162,6 @@ I observed the resulting histograms to notice that there was a pattern in popula
 #### references
 
 [`randomNames()`](https://cran.r-project.org/web/packages/randomNames/randomNames.pdf) <br>
-[value labels](https://www.statmethods.net/input/valuelabels.html)
+[`factor()`](https://www.statmethods.net/input/valuelabels.html)
 
 [back](./challenge.md)
