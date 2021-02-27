@@ -77,8 +77,8 @@ alter_sort = function(min,max,n){
     sorted = c(sorted,generated[back])
   }
   
-  cat(c("generated numbers \t: "[",generated,"]\n"))
-  cat(c("sorted numbers \t\t: "[",sorted,"]\n\n"))
+  cat(c("generated numbers \t: [",generated,"]\n"))
+  cat(c("sorted numbers \t\t: [",sorted,"]\n\n"))
 }
 ```
 
