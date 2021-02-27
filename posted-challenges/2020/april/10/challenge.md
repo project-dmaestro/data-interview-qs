@@ -3,7 +3,7 @@
 [solution in R](solution-r.md) <br>
 [solution in Python](solution-python.md)
 
-Given an array and an integer A, find the maximum for each contiguous subarray of size A.
+Given an **array** and an integer **A**, find the maximum for each contiguous subarray of size **A**.
 
 ```
 Input: array = [1, 2, 3, 1, 4, 5, 2, 3, 6], A = 3
@@ -19,7 +19,6 @@ maximum of subarray 1 = 3
 
 subarray 2 = [1, **2**, **3**, **1**, 4, 5, 2, 3, 6] <br>
 maximum of subarray 2 = 3
-
 
 
 subarray 3 = [1, 2, **3**, **1**, **4**, 5, 2, 3, 6] <br>
