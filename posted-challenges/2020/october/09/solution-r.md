@@ -69,9 +69,9 @@ hist <- pop %>% mutate(
   cycle = 0 # initialize original population
 )
 
-for (i in 1:50){ # simulating 50 transactions
+for (i in 1:50){ # simulate 50 transactions
   
-  # pairing up random people to perform transaction
+  # pair up random people to perform transaction
   pairs = sample(1:1250, 1) # pick one number to represent number of pairs of people
   a = sample(1:2500, pairs, replace = FALSE) # pick the first halves of the pair from pool of 2500 people
   b = sample(c(1:2500)[-a], pairs, replace = FALSE) # pick the second halves of the pair from the remaining people
