@@ -93,7 +93,7 @@ I exported the dataset into .csv for data visualization under tthe name `hist.cs
 
 ### visualization
 
-To visualize the exported dataset, I used <a href = "https://docs.rstudio.com/shinyapps.io/" target = "_blank">shinyapps.io</a>. The code is divided into two, `server` and `ui`. The `server`
+To visualize the exported dataset, I used <a href = "https://docs.rstudio.com/shinyapps.io/" target = "_blank">shinyapps.io</a>. The code is divided into two, `server` and `ui`.
 
 #### server
 
