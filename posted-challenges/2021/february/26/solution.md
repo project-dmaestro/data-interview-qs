@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # solution
 
 Naive Bayes' Theorem is a classification technique based on Bayes' Theorem **under the assumption** that each explanatory variable is independent of each other. One reason why it's not used in algorithms is the mere fact that each predictor *has to be independent* of each other which is almost impossible to find in real world problems.
