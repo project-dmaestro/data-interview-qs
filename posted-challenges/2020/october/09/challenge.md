@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Simulate population wealth over time
 
 [solution in R](solution-r.md) <br>
