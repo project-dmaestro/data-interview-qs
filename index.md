@@ -23,7 +23,7 @@ Here is the list of challenges that I've received so far which will be updated a
 - [12 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Best selling products](./posted-challenges/2020/october/12/challenge.md)
 - [14 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating earnings with Python](./posted-challenges/2020/october/14/challenge.md)
 - [16 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Auto insurance customers](./posted-challenges/2020/october/16/challenge.md)
-- [19 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Retention Analysis](./posted-challenges/2020/october/19/challenge.md)
+- [19 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Retention analysis](./posted-challenges/2020/october/19/challenge.md)
 - [21 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Calculating student attendance using SQL](./posted-challenges/2020/october/21/challenge.md)
 - [23 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; U.S. state population statistics](./posted-challenges/2020/october/23/challenge.md)
 - [26 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Student intelligence](./posted-challenges/2020/october/26/challenge.md)
@@ -31,8 +31,8 @@ Here is the list of challenges that I've received so far which will be updated a
 - [30 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Termination survey data](./posted-challenges/2020/october/30/challenge.md)
 
 <h4> November </h4>
-- [02 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Wine Quality Prediction - Random Forest with Grid Search CV](./posted-challenges/2020/november/02/challenge.md)
-- [06 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; World Leader Exits](./posted-challenges/2020/november/06/challenge.md)
+- [02 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Wine quality prediction - Random Forest with Grid Search CV](./posted-challenges/2020/november/02/challenge.md)
+- [06 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; World leader exits](./posted-challenges/2020/november/06/challenge.md)
 - [09 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Beverage sales](./posted-challenges/2020/november/09/challenge.md)
 - [11 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Births by state](./posted-challenges/2020/november/11/challenge.md)
 - [13 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Defective gaskets](./posted-challenges/2020/november/13/challenge.md)
@@ -49,7 +49,7 @@ Here is the list of challenges that I've received so far which will be updated a
 - [04 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Revenue trends for online vs. in store](./posted-challenges/2020/december/04/challenge.md)
 - [07 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Best ad group, a SQL version](./posted-challenges/2020/december/07/challenge.md)
 - [09 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Matrix frequencies](./posted-challenges/2020/december/09/challenge.md)
-- [11 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Cereal ratings: top 3 variables](./posted-challenges/2020/december/11/challenge.md)
+- [11 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; cereal ratings: top 3 variables](./posted-challenges/2020/december/11/challenge.md)
 - [14 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Retail revenue trends](./posted-challenges/2020/december/14/challenge.md)
 - [16 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Querying San Francisco Public Worker Salary](./posted-challenges/2020/december/16/challenge.md)
 - [21 &nbsp;: &nbsp;&nbsp;&nbsp;&nbsp; Weather forecasting, a markov chain problem](./posted-challenges/2020/december/21/challenge.md)
