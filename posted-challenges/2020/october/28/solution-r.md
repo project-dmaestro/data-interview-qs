@@ -4,7 +4,7 @@ layout: default
 
 # solution in R
 
-### pre-processing data
+## importing packages and pre-processing data
 
 First step was to import the required libraries. I used `tidyverse` as the core package and added more packages along the way as needed, but it'd very unlikely for daily data analyses. I chose to suppress the [diagnostic messages](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/message), hence the `suppressPackageStartupMessages()`. Loading the library without the suppression, `library(tidyverse)`, works as well.
 
@@ -57,7 +57,7 @@ dataset$next_pymnt_d <- sub("^([^-]*-[^-]*).*", "\\1", dataset$next_pymnt_d)
 
 The data had been fully pre-processed at this point and ready to be used.
 
-### data manipulation
+## data manipulation
 
 First step was to create a `loan_status_type` column by categorizing `loan_status` into "Closed" or "Current". The `loan_status_type` had six statuses which are **Fully Paid**, **Current**, [**Charged Off**](https://en.wikipedia.org/wiki/Charge-off), **Late (16 - 30 days)**, **Late (31 - 120 days)**, **In Grace Period** and [**Default**](https://www.investopedia.com/terms/d/default2.asp). In that case, **Fully Paid** was categorized as **Closed** while other categories were considered **Current**. By combining functionalities of `mutate()` and `if_else()`, the newly created `loan_status_type_` would be the last column added into the `dataset` variable.
 
@@ -77,7 +77,7 @@ dataset <- dataset %>% mutate(
                              "Bad"))
 ```
 
-### plotting
+## plotting
 
 Fianl step was to plot month and year the loan was issued and the sum of the loan amounts by `loan_status_type`. The challenge seems to have entered incorrect information as the dataset doesn't have `loan_status_contract` nor is there any description of what the column is, should I create one. Thus, I decided to ignore that part.
 
