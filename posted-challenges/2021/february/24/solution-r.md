@@ -84,7 +84,7 @@ alter_sort = function(min, max, n) {
 }
 ```
 
-For reference, I've created test cases.
+Finally, I tested the function that I built. Here are some examples for references.
 
 ```r
 alter_sort(405,770,11)
