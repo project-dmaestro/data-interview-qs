@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Maximum of subarrays
 
 [solution in R](solution-r.md) <br>
