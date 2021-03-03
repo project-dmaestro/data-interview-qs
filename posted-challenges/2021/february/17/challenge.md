@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chi-square Testing candy distribution
 
 [solution in R](solution-r.md) <br>
