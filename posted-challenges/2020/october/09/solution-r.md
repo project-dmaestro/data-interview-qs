@@ -4,7 +4,7 @@ layout: default
 
 # solution in R
 
-### create population and its wealth
+## create population and its wealth
 
 First step was to import the required libraries. I used `tidyverse` as the core package and would be adding more packages along the way as needed.
 
@@ -60,7 +60,7 @@ pop$ethnicity <- factor(pop$ethnicity,
 
 The data had been fully processed.
 
-### simulation
+## simulation
 
 I hadn't known any package that's used specifically for simulation of wealth distribution so I decided to design one. I tried to make the decision making as random as possible. For the purpose of data visualization, I had initialized `hist` which was historical dataframe to record changes in income that happened during simulation. I also labeled each step of simulation under the variable `cycle`.
 
@@ -91,11 +91,11 @@ for (i in 1:50){ # simulate 50 transactions
 
 I exported the dataset into .csv for data visualization under tthe name `hist.csv`.
 
-### visualization
+## visualization
 
 To visualize the exported dataset, I used <a href = "https://docs.rstudio.com/shinyapps.io/" target = "_blank">shinyapps.io</a>. The code is divided into two, `server` and `ui`.
 
-#### server
+### server
 
 ```r
 # import packages
@@ -118,7 +118,7 @@ shinyServer(function(input, output) {
 })
 ```
 
-#### ui
+### ui
 
 ```r
 # import packages
