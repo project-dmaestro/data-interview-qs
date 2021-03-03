@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Alternative array sorting
 
 [solution in R](solution-r.md) <br>
