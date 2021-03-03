@@ -1,4 +1,4 @@
-# World leader exit
+# World leader exits
 
 [solution in R](solution-r.md) <br>
 [solution in Python](solution-python.md)
