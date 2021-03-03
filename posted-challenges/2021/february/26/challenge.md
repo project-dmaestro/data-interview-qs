@@ -1,4 +1,4 @@
-# naive bayes
+# Naive Bayes
 
 [solution](solution.md)
 
