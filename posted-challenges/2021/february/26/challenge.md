@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Naive Bayes
 
 [solution](solution.md)
