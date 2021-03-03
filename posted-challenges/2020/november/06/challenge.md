@@ -1,4 +1,4 @@
-# Maximum of subarrays
+# World leader exit
 
 [solution in R](solution-r.md) <br>
 [solution in Python](solution-python.md)
