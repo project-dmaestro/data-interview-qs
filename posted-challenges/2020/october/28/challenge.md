@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Loan default prediction (cleaning the data and intro EDA)
 
 [solution in R](solution-r.md) <br>
