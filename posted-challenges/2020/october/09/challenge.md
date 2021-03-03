@@ -1,4 +1,4 @@
-# Loan default prediction (cleaning the data and intro EDA)
+# Simulate population wealth over time
 
 [solution in R](solution-r.md) <br>
 [solution in Python](solution-python.md)
