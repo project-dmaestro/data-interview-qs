@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # solution in R
 
 ## designing the code
