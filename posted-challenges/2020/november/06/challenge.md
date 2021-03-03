@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # World leader exits
 
 [solution in R](solution-r.md) <br>
