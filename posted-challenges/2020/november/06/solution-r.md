@@ -60,7 +60,7 @@ ggplot(data = dataset) +
   coord_flip()
 ```
 
-![](images/plot1.PNG)
+![](images/plot1.png)
 
 #### references
 
