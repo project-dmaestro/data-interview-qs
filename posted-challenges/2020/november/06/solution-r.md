@@ -18,7 +18,7 @@ dataset <- read_csv("archigos-mar-2016.csv")
 
 There was an error with `borndate` variable for observation `#1417` which belonged to Didier Burkhalter but it was neglible.
 
-The challenge describes a variable named `endyear` for the plot's x-axis which doesn't exist, so I did a little data manipulation to extract the `endyear`. I type-casted the `enddate` variable to _Date_ data type before using `substring()` to extract only the end year which then I added into the dataset. Since there had been a lot of years to plot, I chose to group them into decades (i.e. 1870 - 1879, 1880 - 1889, etc.) to make the x-axis easier to read, and then flipped the coordinates in practice of good visualization.
+The challenge describes a variable named `endyear` for the plot's x-axis which doesn't exist, so I did a little data manipulation to extract the `endyear`. I type-casted the `enddate` variable to _Date_ data type before using `substring()` to extract only the end year which then I added into the dataset. Since there had been a lot of years to plot, I chose to group them into decades (i.e. 1870 - 1879, 1880 - 1889, etc.) to make the x-axis easier to read, and then flipped the coordinates based on the principle of good data visualization.
 
 ```r
 dataset$enddate <- as.Date(dataset$enddate)
