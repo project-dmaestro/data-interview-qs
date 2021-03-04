@@ -60,10 +60,11 @@ ggplot(data = dataset) +
   coord_flip()
 ```
 
-![](images/plot1.png)
+![](images/plot1.PNG)
 
 #### references
 
 [substring()](http://rfunction.com/archives/1692)
+[Binning years to decades](https://stackoverflow.com/questions/35352914/floor-a-year-to-the-decade-in-r)
 
 [back](./challenge.md)
