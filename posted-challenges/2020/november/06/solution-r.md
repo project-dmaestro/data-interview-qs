@@ -64,7 +64,7 @@ ggplot(data = dataset) +
 
 #### references
 
-[substring()](http://rfunction.com/archives/1692)
+[substring()](http://rfunction.com/archives/1692) <br>
 [Binning years to decades](https://stackoverflow.com/questions/35352914/floor-a-year-to-the-decade-in-r)
 
 [back](./challenge.md)
