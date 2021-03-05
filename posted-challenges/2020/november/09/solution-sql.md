@@ -4,7 +4,7 @@ layout: default
 
 # solution in SQL
 
-I used `sqlite3` to code the solutions and used Window's Command Prompt as my IDE.
+I used `sqlite3` to code the solution and used Window's Command Prompt as my IDE.
 
 ## creating the tables and its content
 
