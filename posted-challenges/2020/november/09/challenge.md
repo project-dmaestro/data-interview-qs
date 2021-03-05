@@ -4,6 +4,9 @@ layout: default
 
 # Beverage sales
 
+[solution in SQL](solution-sql.md)
+[solution in Python](solution-python.md)
+
 Suppose you're provided two tables, as shown below. One table contains the price for a given product in a given region, while another contains sales for the past week.
 
 <br>
