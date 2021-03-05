@@ -10,4 +10,6 @@ Suppose you're working in a parts manufacturing plant, and you're running qualit
 
 Your company has a policy where if 2 or more of the 20 gaskets in a given pack is defective, they will replace the entire package. What proportion of packages does the company need to replace?
 
+_Hint: If you're struggling with where to start here, consider that this is a [binomial](https://en.wikipedia.org/wiki/Binomial_distribution) probability problem._
+
 [back](https://project-dmaestro.github.io/data-interview-qs/)
