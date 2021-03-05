@@ -6,11 +6,9 @@ layout: default
 
 I used `sqlite3` to code the solution and used Window's Command Prompt as my IDE.
 
-## creating the tables and its content
+## create tables
 
-### create tables
-
-#### product_pricing
+### product_pricing
 
 ```sql
 create table product_pricing (
@@ -21,7 +19,7 @@ create table product_pricing (
 );
 ```
 
-#### product_sales
+### product_sales
 
 ```sql
 create table product_sales (
@@ -31,9 +29,9 @@ create table product_sales (
 );
 ```
 
-### load contents
+## load contents
 
-#### product_pricing
+### product_pricing
 
 ```sql
 INSERT INTO product_pricing VALUES ('Americas','Pepsi','2.2');
@@ -44,7 +42,7 @@ INSERT INTO product_pricing VALUES ('EMEA','Coke','2.0');
 INSERT INTO product_pricing VALUES ('APAC','Coke','1.8');
 ```
 
-#### product_sales
+### product_sales
 
 ```sql
 INSERT INTO product_sales VALUES ('Americas','Pepsi','20');
@@ -54,5 +52,16 @@ INSERT INTO product_sales VALUES ('Americas','Coke','30');
 INSERT INTO product_sales VALUES ('EMEA','Coke','10');
 INSERT INTO product_sales VALUES ('APAC','Coke','13');
 ```
+
+## querying
+
+```sql
+SELECT region, product, (num_sales*price) as total_sales
+FROM product_sales NATURAL JOIN product_pricing;
+```
+
+I ran the query in **DB Browser for SQLite** which resulted in the desired output.
+
+![](images/plot1.PNG)
 
 [back](./challenge.md)
