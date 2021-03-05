@@ -10,9 +10,10 @@ The wording was a bit unusual to me, but I believed that the point of the challe
 
 I defined a few things from the problem:
 
-- Probability of weapon being defective, **p** is 0.01
-- Probability of weapon being functional, **1-p** is 0.99
-- The goals was to find the probability of having two or more defective gaskets out of twenty in a box, **P(X >= 2) = 1 - P(X < 2)**.
+- The number of trials, **n**, is 20. That would be the number of gaskets in a box.
+- The probability of failure defined as when gasket would be defective, **1 - p** is 0.01.
+- The probability of success defined as when gasket would be functional, **p** is 0.99.
+- The desired "success" defined as the replacement of a whole box, **P(x >= 2) = 1 - P(x < 2)**.
 
 P(X >= 2) = 1 - P(X < 2)
 P(X >= 2) = 1 - [P(X = 1) + P(X = 0)]
