@@ -15,15 +15,8 @@ I defined a few things from the given information:
 - The probability of success defined as when gasket would be functional, **p** is 0.99.
 - The desired "success" defined as the replacement of a whole box, **P(x >= 2) = 1 - P(x < 2)**.
 
-     20!          1     20 - 1 
- -----------  0.99  0.01       
- (20 - 1)!1!                   
+Plugging in the numbers and I'd get:
 
-
-
-
-P(X >= 2) = 1 - P(X < 2) <br>
-P(X >= 2) = 1 - [P(X = 1) + P(X = 0)] <br>
-P(X >= 2) = 1 - 
+<img src="http://www.sciweavers.org/tex2img.php?eq=P%28x%20%5Cgeq%202%29%20%3D%201%20-%20P%28x%3C2%29&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt="P(x \geq 2) = 1 - P(x<2)" width="192" height="18" ></2>
 
 [back](./challenge.md)
