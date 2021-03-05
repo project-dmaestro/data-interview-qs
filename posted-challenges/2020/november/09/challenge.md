@@ -9,6 +9,7 @@ Suppose you're provided two tables, as shown below. One table contains the price
 <br>
 
 **product_pricing**
+
 | region   | product | price |
 | -------- | ------- | ----- |
 | Americas | Pepsi   | 2.2   |
