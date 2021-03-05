@@ -12,7 +12,7 @@ I used `sqlite3` to code the solution and used Window's Command Prompt as my IDE
 
 #### product_pricing
 
-```SQL
+```sql
 create table product_pricing (
 	region varchar(20),
 	product varchar(20),
@@ -23,7 +23,7 @@ create table product_pricing (
 
 #### product_sales
 
-```SQL
+```sql
 create table product_sales (
 	region varchar(20),
 	product varchar(20),
@@ -35,7 +35,7 @@ create table product_sales (
 
 #### product_pricing
 
-```SQL
+```sql
 INSERT INTO product_pricing VALUES ('Americas','Pepsi','2.2');
 INSERT INTO product_pricing VALUES ('EMEA','Pepsi','1.8');
 INSERT INTO product_pricing VALUES ('APAC','Pepsi','1.5');
@@ -46,7 +46,7 @@ INSERT INTO product_pricing VALUES ('APAC','Coke','1.8');
 
 #### product_sales
 
-```SQL
+```sql
 INSERT INTO product_sales VALUES ('Americas','Pepsi','20');
 INSERT INTO product_sales VALUES ('EMEA','Pepsi','25');
 INSERT INTO product_sales VALUES ('APAC','Pepsi','22');
