@@ -9,8 +9,6 @@ layout: default
 
 Suppose you're provided two tables, as shown below. One table contains the price for a given product in a given region, while another contains sales for the past week.
 
-<br>
-
 **product_pricing**
 
 | region   | product | price |
