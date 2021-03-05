@@ -6,8 +6,9 @@ layout: default
 
 Suppose you're provided two tables, as shown below. One table contains the price for a given product in a given region, while another contains sales for the past week.
 
-**product_pricing**
+<br>
 
+**product_pricing**
 | region   | product | price |
 | -------- | ------- | ----- |
 | Americas | Pepsi   | 2.2   |
@@ -16,6 +17,8 @@ Suppose you're provided two tables, as shown below. One table contains the price
 | Americas | Coke    | 2.5   |
 | EMEA     | Coke    | 2.0   |
 | APAC     | Coke    | 1.8   |
+
+<br>
 
 **product_sales**
 
