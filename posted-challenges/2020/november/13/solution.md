@@ -15,7 +15,7 @@ I defined a few things from the given information:
 - The probability of success defined as when gasket would be functional, ![](https://latex.codecogs.com/svg.latex?\inline&p&space;=&space;0.99).
 - The desired "success" defined as the replacement of a whole box, ![](https://latex.codecogs.com/svg.latex?\inline&P(x\geq2)&space;=&space;1&space;-&space;P(x&space;<&space;2)).
 
-Plugging in the numbers and I'd get:
+Plugged in the numbers and I'd get:
 
 ![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;<&space;2)) <br>
 ![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;=&space;0)&space;-&space;P(x&space;=&space;1)) <br>
