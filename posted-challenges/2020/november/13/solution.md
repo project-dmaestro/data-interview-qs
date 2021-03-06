@@ -17,6 +17,6 @@ I defined a few things from the given information:
 
 Plugging in the numbers and I'd get:
 
-![\frac{\partial^nf}{\partial x^n}](https://bit.ly/1Ojb54C)
+![](https://latex.codecogs.com/svg.latex?y%3Dx%5E2)
 
 [back](./challenge.md)
