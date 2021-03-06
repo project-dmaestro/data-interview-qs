@@ -17,6 +17,6 @@ I defined a few things from the given information:
 
 Plugging in the numbers and I'd get:
 
-<img src="https://bit.ly/1Ojb54C" align="center" border="0" alt=" \frac{\partial^nf}{\partial x^n} " width="32" height="44" />
+![\frac{\partial^nf}{\partial x^n}](https://bit.ly/1Ojb54C)
 
 [back](./challenge.md)
