@@ -17,6 +17,6 @@ I defined a few things from the given information:
 
 Plugging in the numbers and I'd get:
 
-<img src="https://bit.ly/2MOwcJ7" align="center" border="0" alt="P(x \geq 2) = 1 - P(x<2)" width="192" height="18" />
+<img src="https://bit.ly/2MOwcJ7" align="center" border="0" alt="P(x \geq 2) = 1 - P(x<2)" width="192" height="18">
 
 [back](./challenge.md)
