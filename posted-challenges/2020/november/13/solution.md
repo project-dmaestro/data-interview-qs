@@ -21,6 +21,6 @@ Plugged in the numbers and I'd get:
 ![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;0.817907&space;-&space;0.165234) <br>
 ![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;0.016859)
 
-That'd meant about 1.68% of the 20-set of gaskets produced had to be replaced.
+That'd meant about 1.69% of the 20-set of gaskets produced had to be replaced.
 
 [back](./challenge.md)
