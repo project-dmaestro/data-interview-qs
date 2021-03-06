@@ -20,7 +20,7 @@ set.seed(42)
 pop <- randomNames(2500, return.complete.data = T)
 ```
 
-The **income** column would be randomly generated using `rnorm()` while keeping the specifications in mind; the population income is Normal distributed with mean of USD 50,000 and standard deviation of USD 12,500. I added the `income` column into `pop` dataset using `mutate()` where it'd be the very last column.
+The **income** column would be randomly generated using `rnorm()` while keeping the specifications in mind; the population income is Normal distributed with mean of $50,000 and standard deviation of $12,500. I added the `income` column into `pop` dataset using `mutate()` where it'd be the very last column.
 
 ```r
 pop <- pop %>% mutate(
