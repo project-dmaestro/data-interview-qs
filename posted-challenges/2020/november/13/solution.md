@@ -23,4 +23,6 @@ Plugged in the numbers and I'd get:
 ![](https://latex.codecogs.com/svg.latex?P(x\geq&space;2)&space;=&space;1&space;-&space;1.0e^{-40}&space;-&space;1.98e^{-37}) <br>
 ![](https://latex.codecogs.com/svg.latex?P(x\geq&space;2)&space;\sim&space;1)
 
+Oddly enough, that'd meant I'd have to replace every single box manufactured.
+
 [back](./challenge.md)
