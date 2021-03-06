@@ -17,9 +17,10 @@ Plugged in the numbers and I'd get:
 
 ![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;<&space;2)) <br>
 ![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;=&space;0)&space;-&space;P(x&space;=&space;1)) <br>
-![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;\frac{20!}{(20-0)!0!}&space;0.01^{20}&space;0.99^{20-0}&space;-&space;\frac{20!}{(20-1)!1!}&space;0.01^{20}&space;0.99^{20-1})
+![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;\frac{20!}{(20-0)!0!}&space;0.01^{20}&space;0.99^{20-0}&space;-&space;\frac{20!}{(20-1)!1!}&space;0.01^{20}&space;0.99^{20-1}) <br>
+![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;0.817907&space;-&space;0.165234)
+![](https://latex.codecogs.com/svg.latex?\inline&space;n)
 
-
-That'd meant about 1.68%
+That'd meant about 1.68% of the 20-set of gaskets produced had to be replaced.
 
 [back](./challenge.md)
