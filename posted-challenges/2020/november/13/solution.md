@@ -17,6 +17,7 @@ I defined a few things from the given information:
 
 Plugging in the numbers and I'd get:
 
-![](https://latex.codecogs.com/svg.latex?y%3Dx%5E2)
+![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;<&space;2))
+![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;=&space;0)&space;-&space;P(x&space;=&space;1))
 
 [back](./challenge.md)
