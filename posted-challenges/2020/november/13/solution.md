@@ -11,7 +11,7 @@ The wording was a bit unusual to me, but I believed that the point of the challe
 I defined a few things from the given information:
 
 - The number of trials ![](https://latex.codecogs.com/svg.latex?\inline&space;n) is 20. That would be the number of gaskets in a box.
-- The probability of failure defined as when gasket would be defective, ![](https://latex.codecogs.com/svg.latex?\\inline&space;q&space=&space;1&space;-&space;p) is ![](https://latex.codecogs.com/svg.latex?\inline&space;0.01).
+- The probability of failure defined as when gasket would be defective, ![](https://latex.codecogs.com/svg.latex?\inline&space;q&space=&space;1&space;-&space;p) is ![](https://latex.codecogs.com/svg.latex?\inline&space;0.01).
 - The probability of success defined as when gasket would be functional, ![](https://latex.codecogs.com/svg.latex?\inline&space;p&space;=&space;0.99).
 - The desired "success" defined as the replacement of a whole box, ![](https://latex.codecogs.com/svg.latex?\inline&space;P(x\geq2)&space;=&space;1&space;-&space;P(x&space;<&space;2)).
 
