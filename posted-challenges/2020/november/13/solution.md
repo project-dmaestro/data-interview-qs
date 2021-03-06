@@ -21,6 +21,4 @@ Plugged in the numbers and I'd get:
 ![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;19)&space;=&space;P(x&space;=&space;1)&space;-&space;P(x&space;=&space;2)&space;-&space;P(x&space;=&space;3)&space;-&space;P(x&space;=&space;4)&space;-&space;P(x&space;=&space;5)&space;-&space;P(x&space;=&space;6)&space;-&space;P(x&space;=&space;7)&space;-&space;P(x&space;=&space;8)&space;-&space;P(x&space;=&space;9)&space;-&space;P(x&space;=&space;10)&space;-&space;P(x&space;=&space;11)&space;-&space;P(x&space;=&space;12)&space;-&space;P(x&space;=&space;13)&space;-&space;P(x&space;=&space;14)&space;-&space;P(x&space;=&space;15)&space;-&space;P(x&space;=&space;16)&space;-&space;P(x&space;=&space;17)&space;-&space;P(x&space;=&space;18)) <br><br>
 ![](https://latex.codecogs.com/svg.latex?P(x\geq&space;19)&space;\sim&space;0.983141)
 
-Oddly enough, that'd meant I'd have to replace every single box manufactured.
-
 [back](./challenge.md)
