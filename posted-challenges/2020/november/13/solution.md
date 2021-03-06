@@ -17,7 +17,8 @@ I defined a few things from the given information:
 
 Plugging in the numbers and I'd get:
 
-![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;<&space;2))
-![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;=&space;0)&space;-&space;P(x&space;=&space;1))
+![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;<&space;2)) <br>
+![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;P(x&space;=&space;0)&space;-&space;P(x&space;=&space;1)) <br>
+![](https://latex.codecogs.com/svg.latex?P(x&space;\geq&space;2)&space;=&space;1&space;-&space;\frac{20!}{(20-0)!0!}&space;0.99^{0}&space;0.01^{20-0}&space;-&space;\frac{20!}{(20-1)!1!}&space;0.99^{1}&space;0.01^{20-1})
 
 [back](./challenge.md)
