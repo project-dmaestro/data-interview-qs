@@ -4,6 +4,8 @@ layout: default
 
 # solution in R
 
+## importing packages and pre-processing data
+
 First step was to import the required libraries. I used `tidyverse` as the core package and would be adding more packages along the way as needed.
 
 ```r
@@ -21,6 +23,8 @@ dataset <-
   select(-X)
 ```
 
+## data aggregation
+
 Next was data aggregation which was saved under the name `tally`.
 
 ```r
@@ -29,6 +33,8 @@ tally <- dataset %>%
   summarise(Count = sum(Count)) %>% # sum all the counts for each name
   arrange(desc(Count)) # sort the name starting with the highest count
 ```
+
+## displaying result
 
 Finally to show the top ten name for male and female babies.
 
