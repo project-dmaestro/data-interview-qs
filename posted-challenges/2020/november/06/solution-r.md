@@ -4,6 +4,8 @@ layout: default
 
 # solution
 
+## importing packages and pre-processing data
+
 First step was to import the required libraries. I used ```tidyverse``` as the core package and would be adding more packages along the way as needed.
 
 ```r
@@ -48,6 +50,8 @@ dataset$decade <- factor(dataset$decade,
                                     "2000 - 2009",
                                     "2010 - 2019"))
 ```
+
+## data visualization
 
 Finally, I made a stacked barplot which shows the proportion of exits in each decade.
 
