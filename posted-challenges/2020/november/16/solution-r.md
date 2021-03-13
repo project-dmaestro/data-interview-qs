@@ -43,7 +43,7 @@ head(tally %>% filter(Gender == "M"), 10)
 head(tally %>% filter(Gender == "F"), 10)
 ```
 
-Here was the screenshotted result.
+Here were screenshotted results on top ten baby names for male and female.
 
 ![](images/plot1.PNG) <br>
 ![](images/plot2.PNG)
